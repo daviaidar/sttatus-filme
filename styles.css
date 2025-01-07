@@ -366,3 +366,29 @@ footer {
     transform: scale(1.1); /* Animação de aumento ao passar o mouse */
     filter: brightness(1.2); /* Aumenta o brilho do ícone ao passar o mouse */
 }
+html, body {
+    overflow-x: hidden;
+}
+nav ul {
+    z-index: 1000; /* Valor mais alto que os ícones */
+}
+nav {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative; /* Garante que elementos filhos se ajustem */
+    z-index: 999; /* Para sobrepor outros elementos */
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Alinha itens verticalmente */
+        align-items: center;
+    }
+
+    nav li {
+        width: 100%; /* Cada item ocupa toda a largura */
+        text-align: center; /* Centraliza o texto */
+    }
+}
