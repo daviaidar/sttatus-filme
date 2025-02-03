@@ -7,16 +7,36 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+.minha-imagem {
+    width: 560px; /* Define a largura */
+    height:max-content; /* Mantém a proporção */
+    border-radius: 120px; /* Arredonda os cantos */
+}
 
 header {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYKZebpSjIqbaWikGx2JzR-gjoLim_tiJjw&s');
-    background-size: cover;
-    background-position: center;
     color: #fff;
     text-align: center;
     padding: 4rem 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
     position: relative;
+}
+@media (max-width: 768px) {
+     
+header {
+
+    justify-content: center;
+    align-items: center;  
+    background-color: #f5f5f5; 
+}
+
+
+.minha-imagem {
+    width: 360px;
+    height: auto; 
+    border-radius: 120px; 
+}
+
+     
 }
 
 header::after {
@@ -53,6 +73,7 @@ nav ul {
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid #990000;
+    border-radius: 30px;
 }
 
 nav a {
@@ -79,6 +100,7 @@ nav a:hover {
     padding: 6rem 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
+    border-radius: 20px;
 }
 
 #hero h2 {
@@ -390,5 +412,28 @@ nav {
     nav li {
         width: 100%; /* Cada item ocupa toda a largura */
         text-align: center; /* Centraliza o texto */
+    }
+}
+.ancine {
+    width: 128px; /* Altere para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.sttatusfooter {
+    width: 80px; /* Altere para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 685px;
+    
+}
+@media (max-width: 768px) {
+    .ancine {
+        width: 86px; /* Altere para o tamanho desejado */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    .sttatusfooter {
+        width: 64px; /* Altere para o tamanho desejado */
+        height: auto; /* Mantém a proporção da imagem */
+        border-radius: 685px;
+   
+         
     }
 }
