@@ -415,22 +415,22 @@ nav {
     }
 }
 .ancine {
-    width: 128px; /* Altere para o tamanho desejado */
+    width: 80px; /* Altere para o tamanho desejado */
     height: auto; /* Mantém a proporção da imagem */
 }
 .sttatusfooter {
-    width: 80px; /* Altere para o tamanho desejado */
+    width: 64px; /* Altere para o tamanho desejado */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 685px;
     
 }
 @media (max-width: 768px) {
     .ancine {
-        width: 86px; /* Altere para o tamanho desejado */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 64px; /* Altere para o tamanho desejado */
+        height:min-content; /* Mantém a proporção da imagem */
     }
     .sttatusfooter {
-        width: 64px; /* Altere para o tamanho desejado */
+        width: 48px; /* Altere para o tamanho desejado */
         height: auto; /* Mantém a proporção da imagem */
         border-radius: 685px;
    

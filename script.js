@@ -70,3 +70,22 @@ document.addEventListener("DOMContentLoaded", () => {
         whatsappPopup.style.display = "block";
     }, 5000);
 });
+document.querySelector(".btn").addEventListener("click", function(e) {
+    e.preventDefault(); // Evita o comportamento padrão
+    document.querySelector("#contato").scrollIntoView({ 
+        behavior: "smooth" 
+    });
+});
+document.getElementById("contato").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio padrão
+
+    let name = document.getElementById("name").value;
+    let message = document.getElementById("message").value;
+
+    let phone = "5517988130082"; // Substitua pelo seu número com DDD (ex: 5511999999999)
+
+    let text = `Olá, meu nome é ${name}%0A${message}`;
+
+    let url = `https://wa.me/${phone}?text=${text}`;
+    window.open(url, "_blank"); // Abre o WhatsApp
+});
