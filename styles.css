@@ -426,8 +426,8 @@ nav {
 }
 @media (max-width: 768px) {
     .ancine {
-        width: 64px; /* Altere para o tamanho desejado */
-        height:min-content; /* Mantém a proporção da imagem */
+        width: 48px; /* Altere para o tamanho desejado */
+        height:auto; /* Mantém a proporção da imagem */
     }
     .sttatusfooter {
         width: 48px; /* Altere para o tamanho desejado */
