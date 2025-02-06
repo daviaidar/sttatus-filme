@@ -89,3 +89,12 @@ document.getElementById("contato").addEventListener("submit", function(event) {
     let url = `https://wa.me/${phone}?text=${text}`;
     window.open(url, "_blank"); // Abre o WhatsApp
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const instagramPopup = document.getElementById("instagram-popup");
+    instagramPopup.style.display = "none";
+
+    // Exibir o pop-up após 5 segundos
+    setTimeout(() => {
+        instagramPopup.style.display = "block";
+    }, 5000);
+});
